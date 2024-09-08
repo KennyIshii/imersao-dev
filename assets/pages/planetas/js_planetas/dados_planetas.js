@@ -1,0 +1,87 @@
+let dados = [
+    {
+        nome1: "Terra",
+        nome2: "Terra",
+        descricao: "O planeta natal da humanidade, um mundo azul e verde repleto de vida.",
+        historia: "A Terra tem sido visitada pelos Time Lords inúmeras vezes, sendo palco de muitas aventuras do Doutor e seus companheiros. É um planeta de grande importância histórica e cultural no universo de Doctor Who.",
+        habitantes: "Humanos, além de diversas outras espécies alienígenas que visitaram ou habitaram o planeta ao longo da história.",
+        clima: "Variado, com diferentes climas em diversas regiões, desde os polos gelados até os desertos quentes.",
+        gravidade: "Similar à Terra",
+        tamanho: "Similar à Terra",
+        link: "#",
+        img: "",
+    },
+    {
+        nome1: "Marte",
+        nome2: "Marte",
+        descricao: "O quarto planeta do sistema solar, conhecido como o 'Planeta Vermelho'.",
+        historia: "Marte já foi habitado por civilizações avançadas, como os marcianos de Marte, e tem sido um destino comum para exploração espacial.",
+        habitantes: "No passado, abrigou marcianos inteligentes. Atualmente, é um planeta inabitado, embora possa haver bases científicas ou colônias humanas no futuro.",
+        clima: "Árido, com temperaturas extremas e atmosfera fina.",
+        gravidade: "Menor que a Terra",
+        tamanho: "Menor que a Terra",
+        link: "#",
+        img: "",
+    },
+    
+  {
+        nome1: "Skaro",
+        nome2: "Skaro",
+        descricao: "O planeta natal dos Daleks, um mundo árido e radioativo.",
+        historia: "Skaro era um planeta verde e exuberante antes de uma guerra nuclear devastadora, transformando-o em um mundo árido e radioativo.",
+        habitantes: "Daleks, Kaleds (antes da mutação).",
+        clima: "Árido, radioativo.",
+        gravidade: "Similar à Terra",
+        tamanho: "Similar à Terra",
+        link: "#",
+        img: "skaro.jpg"
+    },
+    {
+        nome1: "Anéis de Akhaten",
+        nome2: "Anéis de Akhaten",
+        descricao: "Um sistema planetário com anéis luminosos e um sol que canta.",
+        historia: "Os anéis de Akhaten são um lugar de grande beleza e espiritualidade, onde a música e a fé são interligadas.",
+        habitantes: "Humanoides que vivem em harmonia com o ambiente, além de outras criaturas místicas.",
+        clima: "Ambiente sereno e luminoso, com temperaturas amenas.",
+        gravidade: "Similar à Terra",
+        tamanho: "Sistema planetário com múltiplos planetas e anéis",
+        link: "#",
+        img: "aneis_akhaten.jpg"
+    },
+    {
+        nome1: "Gallifrey",
+        nome2: "Gallifrey",
+        descricao: "O planeta natal dos Time Lords, uma civilização avançada com domínio da viagem no tempo.",
+        historia: "Gallifrey é um planeta oculto no tempo, capital da realidade. Foi destruído na Guerra do Tempo, mas sua existência continua sendo um mistério.",
+        habitantes: "Time Lords, outras raças alienígenas que vivem ou visitam o planeta.",
+        clima: "Variado, com paisagens exuberantes e cidades futuristas.",
+        gravidade: "Similar à Terra",
+        tamanho: "Similar à Terra",
+        link: "#",
+        img: "gallifrey.jpg"
+    },
+    {
+        nome1: "Ood Esfera",
+        nome2: "Ood Esfera",
+        descricao: "Uma enorme estação espacial habitada pelos Ood, uma raça pacífica e servil.",
+        historia: "A Esfera Ood serve como um centro de comunicação e comércio para os Ood, e já foi palco de diversas aventuras do Doutor.",
+        habitantes: "Ood, outras espécies alienígenas que visitam a estação.",
+        clima: "Ambiente controlado artificialmente dentro da estação.",
+        gravidade: "Artificial, ajustada para a fisiologia dos Ood.",
+        tamanho: "Enorme, com diversas seções e níveis",
+        link: "#",
+        img: "ood_esfera.jpg"
+    },
+    {
+        nome1: "A Biblioteca",
+        nome2: "A Biblioteca",
+        descricao: "Uma biblioteca interdimensional com um número infinito de livros, cada um contendo a história de um universo diferente.",
+        historia: "A Biblioteca é um lugar perigoso, onde a informação pode ser distorcida e a realidade manipulada.",
+        habitantes: "Vasta gama de seres de diferentes universos, além de criaturas que habitam a própria biblioteca.",
+        clima: "Ambiente controlado artificialmente, com corredores infinitos de livros.",
+        gravidade: "Similar à Terra",
+        tamanho: "Infinito",
+        link: "#",
+        img: "biblioteca.jpg"
+    }
+];  
