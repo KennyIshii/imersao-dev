@@ -8,9 +8,12 @@ function pesquisar() {
   let resultados = "";
   
 
-  const planetaEncontrado = dados.find(planeta => {
+  const planetaEncontrado = dados.filter(planeta => {
     const tituloMinusculo = planeta.nome1.toLowerCase();
-    return palavrasBusca.every(palavra => tituloMinusculo.includes(palavra));
+    const termoPesquisaMinuscula = planeta.descricao.toLowerCase();
+    const tagsMinusculas = planeta.tags.map(tag => tag.toLowerCase());
+    return palavrasBusca.every(palavra => tituloMinusculo.includes(palavra) || termoPesquisaMinuscula.includes(palavra) ||
+        tagsMinusculas.some(tag => tag.includes(palavra)));
   });
 
     if (!termoPesquisa) {
@@ -24,20 +27,21 @@ function pesquisar() {
     </a> 
       `;
   // Itera sobre cada dado no array de dados
-    } else if (planetaEncontrado) {
+    } else if (planetaEncontrado.length > 0) {
     // Cria um novo elemento HTML para cada dado, formatando os dados dentro do HTML
-    resultados = `
+    planetaEncontrado.forEach(planeta => {
+    resultados += `
       <div class="item-resultado">
-        <h2 href="#" target="_blank"> ${planetaEncontrado.nome1} </h2>
-        <h3 href="#" target="_blank"> ${planetaEncontrado.nome2} </h3>
-        <img class = "image-container" src=${planetaEncontrado.img}>
-        <p class="descricao-meta"> Planeta: ${planetaEncontrado.nome2}<br>
-        Descrição: ${planetaEncontrado.descricao}</p>
-        <p class="descricao-meta"> História: ${planetaEncontrado.historia}<br>
-        Nº de habitantes: ${planetaEncontrado.habitantes}</p>
-        <p class="descricao-meta"> Clima: ${planetaEncontrado.clima}<br>
+        <h2 href="#" target="_blank"> ${planeta.nome1} </h2>
+        <h3 href="#" target="_blank"> ${planeta.nome2} </h3>
+        <img class = "image-container" src=${planeta.img}>
+        <p class="descricao-meta"> Planeta: ${planeta.nome2}<br>
+        Descrição: ${planeta.descricao}</p>
+        <p class="descricao-meta"> História: ${planeta.historia}<br>
+        Nº de habitantes: ${planeta.habitantes}</p>
+        <p class="descricao-meta"> Clima: ${planeta.clima}<br>
         Gravidade: ${planetaEncontrado.gravidade}</p>
-        <a href=${planetaEncontrado.link} target="_blank">Mais informações</a>
+        <a href=${planeta.link} target="_blank">Mais informações</a>
       </div>
      <a href="../../../../index.html">
       <button class="button">
@@ -47,6 +51,7 @@ function pesquisar() {
     </button>
     </a>  
       `;
+    });
   } else {
     resultados = `<p>Este planeta não foi catalogado.</p>
     <a href="../../../../index.html">
@@ -57,8 +62,9 @@ function pesquisar() {
     </button>
     </a> 
     `;
-    
-  }
+     }
+  section.innerHTML = resultados;
+}
   
   // Função para contar os cliques
   
@@ -73,9 +79,6 @@ function pesquisar() {
   
 
   // Atualiza o conteúdo do elemento com o ID "resultados-pesquisa" com os resultados gerados
-  section.innerHTML = resultados;
-}
-
 
 
 // Obtém uma referência ao elemento HTML com o ID "resultados-pesquisa"
