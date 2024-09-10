@@ -8,8 +8,9 @@ let dados = [
         clima: "Variado, com diferentes climas em diversas regiões, desde os polos gelados até os desertos quentes.",
         gravidade: "Similar à Terra",
         tamanho: "Similar à Terra",
+        tags: ["humanidade", "vida", "cultura", "aventuras", "Doctor Who", "Doutor"],
         link: "#",
-        img: "",
+        img: "galeria_planetas/terra.jpg",
     },
     {
         nome1: "Marte",
@@ -20,11 +21,11 @@ let dados = [
         clima: "Árido, com temperaturas extremas e atmosfera fina.",
         gravidade: "Menor que a Terra",
         tamanho: "Menor que a Terra",
+        tags: ["planeta vermelho", "exploração", "marcianos", "civilizações antigas", "Doctor Who", "Doutor"],
         link: "#",
-        img: "",
+        img: "galeria_planetas/marte.jpg",
     },
-    
-  {
+    {
         nome1: "Skaro",
         nome2: "Skaro",
         descricao: "O planeta natal dos Daleks, um mundo árido e radioativo.",
@@ -33,8 +34,9 @@ let dados = [
         clima: "Árido, radioativo.",
         gravidade: "Similar à Terra",
         tamanho: "Similar à Terra",
-        link: "#",
-        img: "skaro.jpg"
+        tags: ["Daleks", "guerra nuclear", "radioativo", "mutação", "Doctor Who", "Doutor"],
+        link: "https://doctorwho.fandom.com/pt/wiki/Skaro",
+        img: "galeria_planetas/skaro.jpg"
     },
     {
         nome1: "Anéis de Akhaten",
@@ -45,8 +47,9 @@ let dados = [
         clima: "Ambiente sereno e luminoso, com temperaturas amenas.",
         gravidade: "Similar à Terra",
         tamanho: "Sistema planetário com múltiplos planetas e anéis",
-        link: "#",
-        img: "aneis_akhaten.jpg"
+        tags: ["anéis luminosos", "espiritualidade", "música", "misticismo", "Doctor Who", "Doutor"],
+        link: "https://blinovitch-lmt-doctor-who-database.fandom.com/wiki/The_Rings_of_Akhaten_(TV_story)",
+        img: "galeria_planetas/akhaten.jpg"
     },
     {
         nome1: "Gallifrey",
@@ -57,8 +60,9 @@ let dados = [
         clima: "Variado, com paisagens exuberantes e cidades futuristas.",
         gravidade: "Similar à Terra",
         tamanho: "Similar à Terra",
-        link: "#",
-        img: "gallifrey.jpg"
+        tags: ["Time Lords", "viagem no tempo", "Guerra do Tempo", "civilização avançada", "Doctor Who", "Doutor"],
+        link: "https://doctorwho.fandom.com/pt/wiki/Gallifrey",
+        img: "galeria_planetas/gallifrey.jpg"
     },
     {
         nome1: "Ood Esfera",
@@ -69,8 +73,9 @@ let dados = [
         clima: "Ambiente controlado artificialmente dentro da estação.",
         gravidade: "Artificial, ajustada para a fisiologia dos Ood.",
         tamanho: "Enorme, com diversas seções e níveis",
-        link: "#",
-        img: "ood_esfera.jpg"
+        tags: ["Ood", "estação espacial", "comunicação", "comércio", "aventuras", "Doctor Who", "Doutor"],
+        link: "https://doctorwho.fandom.com/es/wiki/Ood_Esfera",
+        img: "galeria_planetas/oodesfera.jpg"
     },
     {
         nome1: "A Biblioteca",
@@ -81,7 +86,8 @@ let dados = [
         clima: "Ambiente controlado artificialmente, com corredores infinitos de livros.",
         gravidade: "Similar à Terra",
         tamanho: "Infinito",
-        link: "#",
-        img: "biblioteca.jpg"
+        tags: ["biblioteca", "distorção", "livros", "conhecimento", "ficção científica", "Doctor Who", "Doutor"],
+        link: "https://doctorwho.fandom.com/pt/wiki/Silence_in_the_Library",
+        img: "galeria_planetas/biblioteca.jpg"
     }
-];  
+]
